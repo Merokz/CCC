@@ -33,7 +33,7 @@ namespace CCC
         public void RunUnitTest(UnitTest unitTest)
         {
             Level1 level1 = new Level1();
-            UnitTest checker = level1.RunUnitTest(unitTest, true);
+            UnitTest level1UnitTest = level1.RunUnitTest(unitTest, true);
             string[] Lines = unitTest.Input;
 
 
