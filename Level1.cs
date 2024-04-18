@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using CCC.Helpers;
 
 namespace CCC
 {
@@ -10,8 +12,9 @@ namespace CCC
     {
         public int Level { get; set; }
         public bool Debug { get; set; }
-        public string[] Lines { get; set; }
         public string[,] LevelFiles { get; set; }
+        private int CurrentUnitTest { get; set; }
+        Dictionary<int, UnitTest> UnitTests { get; set; } = new Dictionary<int, UnitTest>();
 
         public Level1()
         {
@@ -19,15 +22,30 @@ namespace CCC
 
         public void Run()
         {
-            for (int currentLevel = 0; currentLevel < LevelFiles.Length; currentLevel++)
+            for (CurrentUnitTest = 0; CurrentUnitTest <= LevelFiles.Length / 3 - 1; CurrentUnitTest++)
             {
-                RunUnitTest(currentLevel);
+                UnitTest unitTest = new UnitTest(CurrentUnitTest, LevelHelper.ReadUnitTestLines(LevelFiles[CurrentUnitTest, 0]));
+                UnitTests.TryAdd(CurrentUnitTest, unitTest);
+                RunUnitTest(unitTest);
             }
         }
 
-        public void RunUnitTest(int UnitTest)
+        public void RunUnitTest(UnitTest unitTest)
         {
-            Lines = LevelHelper.ReadUnitTestLines(LevelFiles[UnitTest, 0]);
+            string[] Lines = unitTest.Input;
+
+
+
+            if (Debug) DebugUnitTest(unitTest);
+        }
+
+
+
+        public void DebugUnitTest(UnitTest unitTest)
+        {
+            List<string> DebugFile = ["DEBUGGING UNIT TEST: " + unitTest.ID];
+            
+            LevelHelper.WriteUnitTestLines(LevelFiles[unitTest.ID, 2], DebugFile.ToArray());
         }
     }
 }

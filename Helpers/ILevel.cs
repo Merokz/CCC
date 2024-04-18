@@ -4,20 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CCC
+namespace CCC.Helpers
 {
-    public class Level6 : ILevel
+    public interface ILevel
     {
         public int Level { get; set; }
         public bool Debug { get; set; }
-        public string[] Lines { get; set; }
         public string[,] LevelFiles { get; set; }
+        public void Run();
 
-        public Level6()
-        {
-        }
-        public void Run()
-        {
-        }
     }
 }
