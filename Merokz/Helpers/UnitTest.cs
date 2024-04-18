@@ -10,11 +10,16 @@ namespace CCC.Helpers
     {
         public int ID { get; set; }
         public string[] Input { get; set; }
-        //public (int, int) CaseDimensions { get; set; }
+        public string[] Output { get; set; } = new string[0];
+        private string[] Debug { get; set; } = new string[0];
+        
+        public (int, int) CaseDimensions { get; set; }
+        public Dictionary<int, int[]> Cases { get; set; } = new Dictionary<int, int[]>();
+        public Dictionary<int, string[]> Results = new Dictionary<int, string[]>();
 
-        //publci string[] Cases { get; set; }
-        public int CasesAmount { get; set; }
-        public string[] Output { get; set; }
+        public int CasesAmount { get; set; } 
+        
+        //public object[] ReturnObjects { get; set; }
 
         public UnitTest(int unitTestID, string[] unitTestinput)
         {
