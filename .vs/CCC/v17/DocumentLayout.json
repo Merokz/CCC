@@ -1,0 +1,280 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\DEV\\CCC\\Merokz\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level1\\level1_example.in||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level1\\level1_example.in||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level2\\level2_1.in||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level2\\level2_1.in||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level2\\level2_example.in||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level2\\level2_example.in||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level2\\level2_3.in||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level2\\level2_3.in||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level1\\level1_1.out||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level1\\level1_1.out||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level1\\level1_1.debug||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level1\\level1_1.debug||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level1\\level1_example.out||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level1\\level1_example.out||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\level1\\level1_4.out||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:level1\\level1_4.out||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\helpers\\levelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:helpers\\levelhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|c:\\dev\\ccc\\merokz\\helpers\\ilevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A4F33D0-2A52-4DC8-802F-E6246A7FB709}|CCC.csproj|solutionrelative:helpers\\ilevel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Level4.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Level4.cs",
+              "RelativeDocumentMoniker": "Level4.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Level4.cs",
+              "RelativeToolTip": "Level4.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T10:47:05.686Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Level3.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Level3.cs",
+              "RelativeDocumentMoniker": "Level3.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Level3.cs",
+              "RelativeToolTip": "Level3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T10:46:55.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Level2.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Level2.cs",
+              "RelativeDocumentMoniker": "Level2.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Level2.cs",
+              "RelativeToolTip": "Level2.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBwAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T10:43:05.874Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "level1_example.in",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level1\\level1_example.in",
+              "RelativeDocumentMoniker": "level1\\level1_example.in",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level1\\level1_example.in",
+              "RelativeToolTip": "level1\\level1_example.in",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:39:35.655Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "level2_example.in",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level2\\level2_example.in",
+              "RelativeDocumentMoniker": "level2\\level2_example.in",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level2\\level2_example.in",
+              "RelativeToolTip": "level2\\level2_example.in",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:39:29.729Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "level2_1.in",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level2\\level2_1.in",
+              "RelativeDocumentMoniker": "level2\\level2_1.in",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level2\\level2_1.in",
+              "RelativeToolTip": "level2\\level2_1.in",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:35:33.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "level2_3.in",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level2\\level2_3.in",
+              "RelativeDocumentMoniker": "level2\\level2_3.in",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level2\\level2_3.in",
+              "RelativeToolTip": "level2\\level2_3.in",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:35:03.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "level1_1.out",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level1\\level1_1.out",
+              "RelativeDocumentMoniker": "level1\\level1_1.out",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level1\\level1_1.out",
+              "RelativeToolTip": "level1\\level1_1.out",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:34:12.285Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "level1_1.debug",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level1\\level1_1.debug",
+              "RelativeDocumentMoniker": "level1\\level1_1.debug",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level1\\level1_1.debug",
+              "RelativeToolTip": "level1\\level1_1.debug",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:17:19.701Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "level1_example.out",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level1\\level1_example.out",
+              "RelativeDocumentMoniker": "level1\\level1_example.out",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level1\\level1_example.out",
+              "RelativeToolTip": "level1\\level1_example.out",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:17:07.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "level1_4.out",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\level1\\level1_4.out",
+              "RelativeDocumentMoniker": "level1\\level1_4.out",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\level1\\level1_4.out",
+              "RelativeToolTip": "level1\\level1_4.out",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-04-18T10:15:26.851Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Level5.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Level5.cs",
+              "RelativeDocumentMoniker": "Level5.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Level5.cs",
+              "RelativeToolTip": "Level5.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAzwBkAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T09:15:29.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "LevelHelper.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Helpers\\LevelHelper.cs",
+              "RelativeDocumentMoniker": "Helpers\\LevelHelper.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Helpers\\LevelHelper.cs",
+              "RelativeToolTip": "Helpers\\LevelHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T09:04:42.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ILevel.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Helpers\\ILevel.cs",
+              "RelativeDocumentMoniker": "Helpers\\ILevel.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Helpers\\ILevel.cs",
+              "RelativeToolTip": "Helpers\\ILevel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:42:52.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Level1.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Level1.cs",
+              "RelativeDocumentMoniker": "Level1.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Level1.cs",
+              "RelativeToolTip": "Level1.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwBgAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T08:06:51.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\DEV\\CCC\\Merokz\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\DEV\\CCC\\Merokz\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-18T06:22:44.108Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
