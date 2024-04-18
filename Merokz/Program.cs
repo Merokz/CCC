@@ -6,14 +6,7 @@ namespace CCC
     {
         static void Main(string[] args)
         {
-            //for(int i = 1; i <= 5; i++)
-            //{
-            //    RunLevel(i);
-            //}
-            RunLevel(5, -1, true);
-            
-
-
+            RunLevel(2, 1, true);
         }
         public static void RunLevel(int level, int specificLevel = -1, bool debug = false)
         {
