@@ -6,7 +6,7 @@ namespace CCC
     {
         static void Main(string[] args)
         {
-            RunLevel(4, -1, true);
+            RunLevel(4, 2, true);
         }
         public static void RunLevel(int level, int specificLevel = -1, bool debug = false)
         {

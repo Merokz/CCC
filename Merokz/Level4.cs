@@ -1,117 +1,106 @@
-﻿using System;
+﻿using CCC.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using CCC.Helpers;
+using System.Threading.Tasks;
 
 namespace CCC
 {
-    public class Level4 : ILevel
+    public class Level4
     {
-        public int Level { get; set; }
-        public bool Debug { get; set; }
         public string[,] LevelFiles { get; set; }
-        private int CurrentUnitTest { get; set; }
-        Dictionary<int, UnitTest> UnitTests { get; set; } = new Dictionary<int, UnitTest>();
-
-        public Level4()
-        {
-        }
 
         public void Run()
         {
-            for (CurrentUnitTest = 0; CurrentUnitTest <= LevelFiles.Length / 3 - 1; CurrentUnitTest++)
+            int numberOfUnitTests = LevelFiles.GetLength(0);
+            var tasks = new List<Task>();
+
+            for (int i = 0; i < numberOfUnitTests; i++)
             {
-                UnitTest unitTest = new UnitTest(CurrentUnitTest, LevelHelper.ReadUnitTestLines(LevelFiles[CurrentUnitTest, 0]));
-                UnitTests.TryAdd(CurrentUnitTest, unitTest);
-                RunUnitTest(unitTest);
+                int index = i;
+                tasks.Add(Task.Run(() =>
+                {
+                    var inputLines = LevelHelper.ReadUnitTestLines(LevelFiles[index, 0]);
+                    var outputLines = ProcessInput(inputLines);
+                    LevelHelper.WriteUnitTestLines(LevelFiles[index, 1], outputLines);
+                }));
             }
+
+            Task.WaitAll(tasks.ToArray());
         }
 
-        public UnitTest RunUnitTest(UnitTest unitTest, bool IsAsCheckFunction = false)
+        private string[] ProcessInput(string[] lines)
         {
-            string[] Lines = unitTest.Input;
-            if (!int.TryParse(Lines[0], out int cases))
-                throw new Exception("Could not parse the number of cases");
-
-            // We need two more lines to parse here compared to the previous levels.
-            List<string[]> allResults = new List<string[]>();
+            int cases = int.Parse(lines[1]);
+            List<string> results = new List<string>();
 
             int lineIndex = 3;
             for (int i = 0; i < cases; i++)
             {
-                // Parse the coin values
-                int[] coins = Lines[lineIndex++].Split(' ').Select(int.Parse).OrderBy(x => x).ToArray();
-                // Parse the amounts
-                int[] amounts = Lines[lineIndex++].Split(' ').Select(int.Parse).ToArray();
+                int[] coins = lines[lineIndex++].Split(' ').Select(int.Parse).OrderBy(x => x).ToArray();
+                int[] amounts = lines[lineIndex++].Split(' ').Select(int.Parse).ToArray();
 
-                List<string> results = new List<string>();
                 foreach (var amount in amounts)
                 {
-                    results.Add(GetMinimumCoins(amount, coins));
+                    string result = GetMinimumCoins(amount, coins);
+                    results.Add(result);
                 }
-                allResults.Add(results.ToArray());
             }
 
-            unitTest.Output = allResults.SelectMany(x => x).ToArray();
-            LevelHelper.WriteUnitTestLines(LevelFiles[unitTest.ID, 1], unitTest.Output);
-
-            return unitTest;
+            return results.ToArray();
         }
 
         private string GetMinimumCoins(int amount, int[] coins)
         {
-            if (amount == 0) return "0";
+            if (amount == 0) return "0x0";
 
-            // Utilize a long array if expecting very large amounts
-            long[] dp = new long[amount + 1];
-            int[] lastCoin = new int[amount + 1];
-            Array.Fill(dp, long.MaxValue - 1);
+            int[] dp = new int[amount + 1];
+            Array.Fill(dp, int.MaxValue);
             dp[0] = 0;
 
-            for (int i = 0; i < coins.Length; i++)
+            foreach (int coin in coins)
             {
-                for (int j = coins[i]; j <= amount; j++)
+                for (int j = coin; j <= amount; j++)
                 {
-                    if (dp[j - coins[i]] + 1 < dp[j])
+                    if (dp[j - coin] != int.MaxValue && dp[j - coin] + 1 < dp[j])
                     {
-                        dp[j] = dp[j - coins[i]] + 1;
-                        lastCoin[j] = coins[i];
+                        dp[j] = dp[j - coin] + 1;
                     }
                 }
             }
 
-            return BuildResultString(amount, dp, lastCoin);
+            if (dp[amount] == int.MaxValue) return "Not Possible";
+
+            return BuildResultString(amount, coins, dp);
         }
 
-        private string BuildResultString(int amount, long[] dp, int[] lastCoin)
+        private string BuildResultString(int amount, int[] coins, int[] dp)
         {
-            if (dp[amount] == long.MaxValue - 1) return "Not Possible";
-
-            StringBuilder result = new StringBuilder();
-            int currentAmount = amount;
             Dictionary<int, int> coinCount = new Dictionary<int, int>();
-
-            while (currentAmount > 0)
+            for (int i = amount; i > 0;)
             {
-                int coin = lastCoin[currentAmount];
-                if (coinCount.ContainsKey(coin))
+                for (int j = coins.Length - 1; j >= 0; j--)
                 {
-                    coinCount[coin]++;
+                    int coin = coins[j];
+                    if (i >= coin && dp[i] == dp[i - coin] + 1)
+                    {
+                        if (!coinCount.ContainsKey(coin))
+                            coinCount[coin] = 0;
+                        coinCount[coin]++;
+                        i -= coin;
+                        break;
+                    }
                 }
-                else
-                {
-                    coinCount[coin] = 1;
-                }
-                currentAmount -= coin;
             }
 
-            foreach (var coin in coinCount)
-            {
-                result.Append($"{coin.Value}x{coin.Key} ");
-            }
-
-            return result.ToString().Trim();
+            return string.Join(" ", coinCount.OrderByDescending(x => x.Key).Select(x => $"{x.Value}x{x.Key}"));
         }
     }
+
+    // Mock classes for context
+    //public static class LevelHelper
+    //{
+    //    public static string[] ReadUnitTestLines(string path) => System.IO.File.ReadAllLines(path);
+    //    public static void WriteUnitTestLines(string path, string[] lines) => System.IO.File.WriteAllLines(path, lines);
+    //}
 }
