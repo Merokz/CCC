@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Linq.Expressions;
 using System.Text;
-using System.Threading.Tasks;
 using CCC.Helpers;
 
 namespace CCC
 {
-    public class Level3 : ILevel
+    public class Level4 : ILevel
     {
         public int Level { get; set; }
         public bool Debug { get; set; }
@@ -16,7 +14,7 @@ namespace CCC
         private int CurrentUnitTest { get; set; }
         Dictionary<int, UnitTest> UnitTests { get; set; } = new Dictionary<int, UnitTest>();
 
-        public Level3()
+        public Level4()
         {
         }
 
@@ -36,21 +34,22 @@ namespace CCC
             if (!int.TryParse(Lines[0], out int cases))
                 throw new Exception("Could not parse the number of cases");
 
-            Lines = Lines.Skip(2).ToArray();
+            // We need two more lines to parse here compared to the previous levels.
             List<string[]> allResults = new List<string[]>();
 
+            int lineIndex = 3;
             for (int i = 0; i < cases; i++)
             {
-                // Parse the coin values from each line
-                int[] coins = Lines[i].Split(' ').Select(int.Parse).OrderBy(x => x).ToArray();
-                List<string> results = new List<string>();
+                // Parse the coin values
+                int[] coins = Lines[lineIndex++].Split(' ').Select(int.Parse).OrderBy(x => x).ToArray();
+                // Parse the amounts
+                int[] amounts = Lines[lineIndex++].Split(' ').Select(int.Parse).ToArray();
 
-                // Get minimum coins needed for each amount from 1 to 100
-                for (int amount = 1; amount <= 100; amount++)
+                List<string> results = new List<string>();
+                foreach (var amount in amounts)
                 {
                     results.Add(GetMinimumCoins(amount, coins));
                 }
-
                 allResults.Add(results.ToArray());
             }
 
@@ -62,32 +61,33 @@ namespace CCC
 
         private string GetMinimumCoins(int amount, int[] coins)
         {
-            int[] dp = new int[amount + 1];
-            int[] count = new int[amount + 1];
+            if (amount == 0) return "0";
+
+            // Utilize a long array if expecting very large amounts
+            long[] dp = new long[amount + 1];
             int[] lastCoin = new int[amount + 1];
-            Array.Fill(dp, int.MaxValue - 1);
-            Array.Fill(count, 0);
-            Array.Fill(lastCoin, -1);
+            Array.Fill(dp, long.MaxValue - 1);
             dp[0] = 0;
 
-            for (int coin = 0; coin < coins.Length; coin++)
+            for (int i = 0; i < coins.Length; i++)
             {
-                for (int j = coins[coin]; j <= amount; j++)
+                for (int j = coins[i]; j <= amount; j++)
                 {
-                    if (dp[j - coins[coin]] + 1 < dp[j])
+                    if (dp[j - coins[i]] + 1 < dp[j])
                     {
-                        dp[j] = dp[j - coins[coin]] + 1;
-                        count[j] = count[j - coins[coin]] + 1;
-                        lastCoin[j] = coins[coin];
+                        dp[j] = dp[j - coins[i]] + 1;
+                        lastCoin[j] = coins[i];
                     }
                 }
             }
 
-            return BuildResultString(amount, count, lastCoin);
+            return BuildResultString(amount, dp, lastCoin);
         }
 
-        private string BuildResultString(int amount, int[] count, int[] lastCoin)
+        private string BuildResultString(int amount, long[] dp, int[] lastCoin)
         {
+            if (dp[amount] == long.MaxValue - 1) return "Not Possible";
+
             StringBuilder result = new StringBuilder();
             int currentAmount = amount;
             Dictionary<int, int> coinCount = new Dictionary<int, int>();
@@ -114,5 +114,4 @@ namespace CCC
             return result.ToString().Trim();
         }
     }
-
 }
